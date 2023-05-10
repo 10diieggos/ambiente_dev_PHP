@@ -1,6 +1,6 @@
 # Ambiente básico em Docker para aplicações em PHP
 
-Este é um projeto simples que fornece um ambiente básico em Docker para iniciar uma aplicação em PHP. O ambiente inclui o PHP 7.4 e o MySQL 8.0, bem como o phpMyAdmin para gerenciamento do banco de dados.
+Este é um repositório que contém um ambiente básico em Docker para iniciar uma aplicação em PHP. O ambiente inclui o PHP 7.4 e o MySQL 8.0, bem como o phpMyAdmin para gerenciamento do banco de dados. O objetivo deste projeto é fornecer um ponto de partida para desenvolvedores que desejam criar uma aplicação em PHP usando Docker como ambiente de desenvolvimento.
 
 ## Pré-requisitos
 
