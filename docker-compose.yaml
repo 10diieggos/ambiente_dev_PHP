@@ -1,0 +1,30 @@
+version: '3'
+
+services:
+  # Configuração do container da aplicação PHP
+  app:
+    build: .
+    ports:
+      - "8080:80"
+    depends_on:
+      - db
+
+  # Configuração do container do banco de dados MySQL
+  db:
+    image: mysql:5.7
+    environment:
+      MYSQL_ROOT_PASSWORD: senha
+      MYSQL_DATABASE: meu_banco
+    ports:
+      - "3306:3306"
+
+  # Configuração do container do phpMyAdmin
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin
+    environment:
+      PMA_HOST: db
+      MYSQL_ROOT_PASSWORD: senha
+    ports:
+      - "8081:80"
+    depends_on:
+      - db
