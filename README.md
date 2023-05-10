@@ -14,7 +14,7 @@ Antes de executar o projeto, é necessário ter os seguintes softwares instalado
 1. Clone este repositório para a sua máquina:
 
 ```bash
-git clone https://github.com/seu-usuario/ambiente-php-docker.git
+git clone https://github.com/10diieggos/ambiente_dev_PHP.git
 ```
 2. Entre na pasta do projeto:
 ```bash
@@ -26,9 +26,7 @@ cd ambiente-php-docker
 docker-compose up -d
 ```
 
-4. Acesse o phpMyAdmin no navegador:
-
-http://localhost:8080/
+4. Acesse o phpMyAdmin no navegador: http://localhost:8081/
 
 5. Faça login no phpMyAdmin com as seguintes credenciais:
 Usuário: root 
@@ -39,12 +37,9 @@ Senha: senha
    - `nome`: string, tamanho 50, NOT NULL;
    - `idade`: inteiro, NOT NULL.
 
-7. Coloque sua aplicação PHP dentro da pasta `app` na raiz do projeto. Como exemplo, há um arquivo `index.php` na pasta `app` que exibe uma lista de pessoas cadastradas na tabela `pessoas`.
+7. Acesse sua aplicação no navegador: http://localhost:8000/
 
-8. Acesse sua aplicação no navegador:
-http://localhost:8000/
-
-9. Para testar a aplicação, crie alguns registros na tabela `pessoas` por meio do phpMyAdmin e verifique se eles são exibidos corretamente na página `index.php`.
+8. Para testar a aplicação, crie alguns registros na tabela `pessoas` por meio do phpMyAdmin e verifique se eles são exibidos corretamente na página `index.php`.
 
 Pronto! Agora você tem um ambiente básico em Docker para iniciar sua aplicação em PHP.
 
